@@ -177,10 +177,11 @@ function buttonClick(){
   console.log(t1.value)
   console.log(t2.value)
   cerca(t1.value,t2.value)
-  let newli=document.createElement('li')
+  // let newli=document.createElement('li')
   let lista=document.querySelector('ol')
   // newli.innerText="Ciao"
   for(let i=0;i<result.length;i++){
+    let newli=document.createElement('li')
     newli.innerText=(result[i].title+" / "+" "+result[i].location)
     // console.log(result[i].title)
     lista.appendChild(newli)
